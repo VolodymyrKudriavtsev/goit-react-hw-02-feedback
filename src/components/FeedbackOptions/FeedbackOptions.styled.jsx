@@ -11,6 +11,10 @@ export const Button = styled.button`
   box-shadow: rgb(0 0 0 / 24%) 0px 3px 5px;
   cursor: pointer;
 
+  &::first-letter {
+    text-transform: uppercase;
+  }
+
   &:not(:last-child) {
     margin-right: 10px;
   }
@@ -18,5 +22,9 @@ export const Button = styled.button`
   &:hover {
     color: white;
     background-color: #87cefa;
+  }
+
+  &:active {
+    box-shadow: none;
   }
 `;
